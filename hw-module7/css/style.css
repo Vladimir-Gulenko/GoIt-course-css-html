@@ -1,0 +1,358 @@
+/*---ADD FONTS---*/
+
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v12-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v12-latin_cyrillic-regular.woff") format("woff");
+}
+
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v12-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v12-latin_cyrillic-700.woff") format("woff");
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"),
+    url("../fonts/roboto-slab-v7-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-slab-v7-latin-regular.woff") format("woff");
+}
+
+/* amita-regular - latin */
+@font-face {
+  font-family: "Amita";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Amita Regular"), local("Amita-Regular"),
+    url("../fonts/amita-v3-latin-regular.woff2") format("woff2"),
+    url("../fonts/amita-v3-latin-regular.woff") format("woff");
+}
+
+/* meera-inimai-regular - latin */
+@font-face {
+  font-family: "Meera Inimai";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Meera Inimai"), local("MeeraInimai-Regular"),
+    url("../fonts/meera-inimai-v2-latin-regular.woff2") format("woff2"),
+    url("../fonts/meera-inimai-v2-latin-regular.woff") format("woff");
+}
+
+/*---SETTINGS---*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+
+/*---START OF PAGE HEADER---*/
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 945px;
+}
+
+.page-header {
+  padding-top: 45px;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 485px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.site-logo {
+  text-decoration: none;
+  display: block;
+  font-size: 26px;
+  font-family: "Amita";
+  color: rgb(254, 209, 54);
+  line-height: 39px;
+  font-weight: bold;
+}
+
+.site-nav li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.site-nav-item a {
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  line-height: 17px;
+  font-weight: bold;
+}
+
+.site-nav-item a:hover,
+.site-nav-itema:focus {
+  color: rgb(254, 209, 54);
+}
+
+/*---END OF PAGE HEADER---*/
+
+/*---START OF FIRST SECTION---*/
+
+.services {
+  margin: 0 auto;
+  padding-top: 127px;
+  padding-bottom: 124px;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list li {
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  max-width: 290px;
+}
+
+.services-item::before {
+  margin: 0 auto 22px;
+  display: block;
+  content: "";
+  height: 70px;
+  width: 70px;
+  border: 3px solid rgb(254, 209, 54);
+  border-radius: 50px;
+}
+
+.e-commerce::before {
+  background-image: url(../img/Icon-Basket.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.responsive::before {
+  background-image: url(../img/Icon-Laptop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.security::before {
+  background-image: url(../img/Icon-Locked.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*---END OF FIRST SECTION---*/
+
+/*---START OF SECOND SECTION---*/
+
+.contacts {
+  background: rgb(34, 34, 34);
+  padding-bottom: 110px;
+  background-image: url(../img/Map-Image.png);
+  background-repeat: no-repeat;
+  background-position-y: 90%;
+  background-position-x: 100%;
+  padding-top: 110px;
+}
+
+.contact-form-inputs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.input-group>input:not(:last-of-type) {
+  margin-bottom: 28px;
+  }
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group>input {
+  width: 455px;
+  height: 50px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(187, 187, 187);
+  font-weight: bold;
+  line-height: 16px;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 0px;
+}
+
+
+input:valid,
+textarea:valid {
+  outline-color: rgb(5, 201, 21);
+}
+
+input:invalid,
+textarea:invalid {
+  outline-color: rgb(255, 0, 0);
+}
+
+.contact-form-inputs>textarea {
+  width: 455px;
+  height: 210px;
+  resize: none;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(187, 187, 187);
+  font-weight: bold;
+  line-height: 16px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.button {
+  width: 240px;
+  height: 66px;
+  margin: 0 auto;
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+  outline: none;
+  border-radius: 1px;
+  line-height: 60px;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  margin-top: 30px;
+}
+
+.button:hover {
+  background-image: linear-gradient(to left,
+    #009245,
+    #fcee21,
+    #00a8c5,
+    #d9e021);
+}
+
+/*---END OF SECOND SECTION---*/
+/*---START OF TEXT DECORATION---*/
+.sections-header {
+  margin: 0;
+  text-align: center;
+}
+
+.sections-header>h2 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.first-header {
+  margin-bottom: 84px;
+}
+
+.first-header>h2 {
+  font-size: 40px;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  line-height: 48px;
+  margin-bottom: 24px;
+}
+
+.first-header>p {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Amita";
+  color: rgb(119, 119, 119);
+  font-style: italic;
+  line-height: 20px;
+}
+
+.second-header {
+  margin-bottom: 78px;
+}
+
+.second-header>h2 {
+  font-size: 40px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 48px;
+  margin-bottom: 24px;
+}
+
+.second-header>p {
+  font-size: 16px;
+  font-family: "Amita";
+  color: rgb(119, 119, 119);
+  font-style: italic;
+  line-height: 20px;
+  margin: 0;
+}
+
+.services-item>h3 {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  line-height: 22px;
+  margin-bottom: 18px;
+}
+
+.services-item>p {
+  margin: 0;
+  font-size: 14px;
+  font-family: "RobotoSlab";
+  color: rgb(119, 119, 119);
+  line-height: 16px;
+  text-align: center;
+  width: 245px;
+}
+
+/*---END OF TEXT DECORATION---*/

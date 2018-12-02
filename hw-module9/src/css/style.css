@@ -1,0 +1,240 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.button {
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  display: block;
+  width: 28rem;
+  border-radius: 3rem;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+/*BODY START*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+/*HEADER START*/
+
+.page-header {
+  margin: 0 auto;
+  background: rgb(51, 51, 51);
+  background-image: url(../img/main_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.page-nav {
+  margin: 0 auto;
+}
+
+.nav-links {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-links a:hover {
+  border: 0.2rem solid rgb(255, 255, 255);
+  border-radius: 3rem;
+}
+
+.links-item>a {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+  border: 0.2rem solid rgba(255, 255, 255, 0);
+}
+
+.site-logo {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+}
+
+/* HEADER END */
+
+/* SECTION START */
+
+.main-title {
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.title-promo {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+}
+
+.promo-button {
+  border: 0.2rem solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.promo-button:hover {
+  background-color: rgb(255, 78, 80);
+  border-color: rgb(255, 78, 80);
+}
+
+.section-partners {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+
+.title-partners {
+  margin: 0;
+  font-size: 2.2rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.partners-list {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.partners-item {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.name {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+}
+
+.info {
+  margin: 0;
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  color: rgb(102, 102, 102);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.item-img {
+  position: relative;
+}
+
+.item-img>img {
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.item-img::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 3.6rem;
+  height: 3.6rem;
+  right: 20%;
+  top: 70%;
+  border: 0.3rem rgb(255, 255, 255) solid;
+  border-radius: 50%;
+  background-position: 45% 45%;
+  background-repeat: no-repeat;
+}
+
+.shape1::after {
+  background-image: url(../img/Shape1.png);
+  background-color: rgb(255, 78, 80);
+}
+
+.shape2::after {
+  background-image: url(../img/Shape2.png);
+  background-color: rgb(255, 165, 7);
+}
+
+.shape3::after {
+  background-image: url(../img/Shape3.png);
+  background-color: rgb(28, 215, 173);
+}
+
+.shape4::after {
+  background-image: url(../img/Shape4.png);
+  background-color: rgb(78, 115, 219);
+}
+
+.partners-button {
+  border: 0.2rem solid rgb(255, 78, 80);
+  background: rgb(255, 255, 255);
+  color: rgb(255, 78, 80);
+}
+
+.partners-button:hover {
+  background: rgb(255, 78, 80);
+  color: rgb(255, 255, 255);
+}
+
+/* SECTION END */
